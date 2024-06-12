@@ -213,7 +213,7 @@ game.addEventListener("click", function (e) {
       generateNum();
       checkWinner(pcclass);
     }
-  }, 1200);
+  }, 500);
 });
 
 //implementing the reset the game features
