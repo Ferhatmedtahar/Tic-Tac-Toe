@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/icon.jpg" />
+    <title>XO game</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="dark">
+    <nav class="nav-of-game">
+      <div class="nav-left">
+        <img class="logo" src="./img/logo.png" />
+        <h1 class="logodesc">
+          Tic Tac Toe<br /><span style="font-size: 85.5%">(XO) game</span>
+        </h1>
+      </div>
+      <h2 class="starter">Click to start Playing</h2>
+      <!-- buttons on the right side  -->
+      <div class="buttons">
+        <button class="btn about">About</button>
+        <button class="btn reset">Reset</button>
+        <button class="mode-image">
+          <img
+            class="mode"
+            src="./img/icons8-dark-mode-50.png"
+            data-tab="./img/light-mode.png"
+          />
+        </button>
+      </div>
+    </nav>
+    <main class="game">
+      <div class="item" id="item-1"></div>
+      <div class="item" id="item-2"></div>
+      <div class="item" id="item-3"></div>
+      <div class="item" id="item-4"></div>
+      <div class="item" id="item-5"></div>
+      <div class="item" id="item-6"></div>
+      <div class="item" id="item-7"></div>
+      <div class="item" id="item-8"></div>
+      <div class="item" id="item-9"></div>
+    </main>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 style="color: #4a70d8">Tic-Tac-Toe</h1>
+      <p>
+        also known as X and O, is a classic two-player game where players take
+        turns marking spaces in a 3x3 grid with their respective symbols, X or
+        O.<span style="color: #b30808">
+          The objective of the game is to be the first player to get three of
+          their symbols in a row, either horizontally, vertically, or
+          diagonally.</span
+        >
+        The game begins with an empty grid, The first player places their symbol
+        in an empty square, followed by the second player placing their symbol
+        in an empty square. This alternation continues until one player achieves
+        three consecutive symbols in a line, winning the game, or until all
+        squares are filled, resulting in a draw if no player has won.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <footer class="container">
+      <div class="choose">
+        <div class="o-choose">&#x25CB;<span class="player1 hidden"></span></div>
+        <div class="x-choose">&times;<span class="player2 hidden"></span></div>
+      </div>
+    </footer>
+  </body>
+</html>
