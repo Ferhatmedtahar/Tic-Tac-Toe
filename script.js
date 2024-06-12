@@ -208,11 +208,12 @@ game.addEventListener("click", function (e) {
 
   //check winner
   if (!gameOver) checkWinner(plclass);
-
-  if (!gameOver) {
-    generateNum();
-    checkWinner(pcclass);
-  }
+  setTimeout(function () {
+    if (!gameOver) {
+      generateNum();
+      checkWinner(pcclass);
+    }
+  }, 550);
 });
 
 //implementing the reset the game features
