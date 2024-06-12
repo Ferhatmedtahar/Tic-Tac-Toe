@@ -250,7 +250,7 @@ body {
 }
 
 /* for phones */
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .game {
     display: grid;
     grid-template-columns: 60px 60px 60px;
